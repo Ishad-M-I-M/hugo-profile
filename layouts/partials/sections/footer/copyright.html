@@ -9,6 +9,13 @@
                 </a>
             </div>
             {{ end }}
+            {{if .Site.Params.footer.sponsor | default false}}
+            <div class="pb-2">
+                <a href="https://www.buymeacoffee.com/ishadijaz4" target="_blank">
+                    <img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: 60px !important;width: 217px !important;" >
+                </a>
+            </div>
+            {{end}}
             &copy; {{ now.Format "2006"}} {{ .Site.Params.copyright }} All Rights Reserved
             <div class="text-secondary">
                 Made with
