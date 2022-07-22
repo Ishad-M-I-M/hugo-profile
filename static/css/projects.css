@@ -1,7 +1,8 @@
 /* projects */
 
-#projects h3 {
+#projects h5 {
     color: var(--text-secondary-color) !important;
+    margin-bottom: 0 !important;
 }
 
 #projects a {
@@ -72,4 +73,9 @@
     position: absolute;
     bottom: .5rem;
     right: 1rem;
+}
+
+#projects .brief{
+    font-size: xx-small;
+    margin-bottom: 0.4rem !important;
 }
