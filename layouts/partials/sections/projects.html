@@ -19,6 +19,13 @@
                         <div class="card-text bg-transparent secondary-font">
                             {{ .content }}
                         </div>
+                        {{ if .period}}
+                        <div class="stick-bottom float-end">
+                            <small>
+                            {{ .period}}
+                            </small>                            
+                        </div>
+                        {{ end }}
                     </div>
                     {{ if or (.links) (.featured) }}
                     <div class="card-footer py-3">
