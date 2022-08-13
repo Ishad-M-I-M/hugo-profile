@@ -31,6 +31,11 @@
 <link rel="stylesheet" href="{{ .Site.Params.staticPath }}/style.css">
 {{ end }}
 
+<!-- Custom Scripts -->
+{{ if .Site.Params.customJS}}
+    {{.Site.Params.customJS | safeHTML }}
+{{ end }}
+
 <style>
     :root {
         --text-color: {{ .Site.Params.color.textColor | default "#343a40" }};
