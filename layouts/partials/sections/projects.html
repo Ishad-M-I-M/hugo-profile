@@ -38,11 +38,13 @@
                         </span>
                         {{ end }}
                         {{ if .featured }}
-                        <span class="float-end">
-                            <a class="btn btn-sm" href="{{ .featured.link }}" target="_blank">
-                                {{ .featured.name }}
-                            </a>
-                        </span>
+                            {{ range .featured }}
+                            <span class="float-end me-1">
+                                <a class="btn btn-sm" href="{{ .link }}" target="_blank">
+                                    {{ .name }}
+                                </a>
+                            </span>
+                            {{end}}
                         {{ end }}
                     </div>
                     {{ end }}
