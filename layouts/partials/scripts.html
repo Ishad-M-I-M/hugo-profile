@@ -57,8 +57,15 @@
     }
 
     function showPage() {
-        try{
+        try {
             document.getElementById("loading-icons").style.display = "block";
-        } catch(err) {}
+        } catch (err) { }
     }
+
+    function onData(event) {
+        const highest = event.detail.highest;
+        console.log(`Highest score was ${highest.score} on ${highest.date}`);
+    }
+    document.querySelector('#skills-chart').addEventListener('data', onData);
+
 </script>
